@@ -47,8 +47,22 @@ const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
-  
+
+  discount(string){
+    if(string === 'teacher'){
+      return burger.price = 13.5;
+    }else if(string === 'student'){
+      return burger.price = 13.5;
+    }else if(string === 'public'){
+      return burger.price = 16.2;
+    }
+    return discount;
+  }
 }
+
+console.log('task 2', burger.discount('public'));
+
+
 
 
 
@@ -69,7 +83,7 @@ Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
 
-
+console.log('task 3', reviews[5]);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
